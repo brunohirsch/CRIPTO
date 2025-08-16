@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: crypto-portfolio-backend
+    env: node
+    plan: free
+    buildCommand: |
+      npm i
+      npx prisma generate
+      npm run build
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: DATABASE_URL
+        value: file:./dev.db
+      - key: TRUSTED_ORIGINS
+        value: https://<seu-usuario>.github.io
+      - key: CMC_API_KEY
+        sync: false
+      - key: BINANCE_API_KEY
+        sync: false
+      - key: BINANCE_API_SECRET
+        sync: false
+      - key: MB_API_ID
+        sync: false
+      - key: MB_API_SECRET
+        sync: false

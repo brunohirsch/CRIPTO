@@ -1,0 +1,22 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "name": "crypto-portfolio-backend",
+  "services": [
+    {
+      "name": "api",
+      "start": "npm start",
+      "build": "npm run build",
+      "source": "."
+    }
+  ],
+  "variables": {
+    "PORT": "8787",
+    "DATABASE_URL": "file:./dev.db",
+    "TRUSTED_ORIGINS": "https://<seu-usuario>.github.io",
+    "CMC_API_KEY": "",
+    "BINANCE_API_KEY": "",
+    "BINANCE_API_SECRET": "",
+    "MB_API_ID": "",
+    "MB_API_SECRET": ""
+  }
+}

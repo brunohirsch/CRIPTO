@@ -1,0 +1,36 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b0e11;        /* inspirado na Binance */
+  --panel: #12161c;
+  --text: #eaecef;
+  --muted: #9aa0a6;
+  --accent: #f0b90b;    /* amarelo */
+  --accent-weak: #f8d12f;
+  --border: rgba(255,255,255,0.06);
+  --success: #0ecb81;
+  --danger: #f6465d;
+}
+html, body, #root {
+  height: 100%; margin: 0; background: var(--bg); color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 16px 24px 40px; }
+.card { background: var(--panel); border-radius: 12px; padding: 16px; border: 1px solid var(--border); }
+.row { display: flex; gap: 16px; flex-wrap: wrap; }
+.grow { flex: 1 1 0; }
+.title { font-weight: 700; font-size: 18px; margin-bottom: 10px; }
+.muted { color: var(--muted); }
+.btn { border: 1px solid var(--border); background: #0a0d10; padding: 8px 12px; border-radius: 10px; color: var(--text); cursor: pointer; font-weight: 700; }
+.btn:hover { border-color: var(--accent-weak); }
+.btn-primary { background: var(--accent); color: #111; border-color: #d9aa00; }
+.btn-primary:hover { background: var(--accent-weak); }
+.toolbar { display:flex; align-items:center; gap:12px; padding: 14px 24px; background: #0e1116; border-bottom: 1px solid var(--border); position: sticky; top:0; z-index: 5; }
+.brand { display:flex; align-items:center; gap:10px; text-decoration:none; color: var(--text); font-weight: 900; font-size: 16px; letter-spacing:.04em; }
+.spacer { flex: 1 1 auto; }
+.badge { display:inline-flex; align-items:center; gap:6px; font-weight:700; padding:4px 8px; border-radius: 12px; background: #0e1116; border: 1px solid var(--border); }
+.badge.C { color: var(--success); } .badge.F { color: #5fb0ff; } .badge.O { color: #ffcf5a; } .badge.P { color: var(--danger); }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px 8px; text-align: left; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+tr.draggable { cursor: grab; }
+select.cfop { background:#0a0d10; color:var(--text); border:1px solid var(--border); border-radius:8px; padding:6px 8px; }
