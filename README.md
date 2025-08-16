@@ -1,1 +1,0 @@
-beckedn painel cripto
